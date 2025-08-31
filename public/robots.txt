@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://formatflow.amber-field.com/sitemap.xml

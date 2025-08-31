@@ -9,12 +9,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://formatflow.app'),
+  metadataBase: new URL('http://localhost:3000'),
   title: "FormatFlow – In-browser Image Converter",
   description: "Fast, secure image converter in your browser. Convert HEIC, WebP, PNG, and JPG files instantly. No downloads, no signups, no limits. All processing happens in your browser for complete privacy.",
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
       { url: "/favicon-64x64.png", sizes: "64x64", type: "image/png" },
@@ -47,6 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/favicon-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merienda:wght@300..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet" />
